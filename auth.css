@@ -1,0 +1,342 @@
+/* Authentication Pages Styles */
+
+/* Container for auth forms */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    padding: 2rem;
+}
+
+.auth-card {
+    background: linear-gradient(135deg, rgba(13, 29, 49, 0.8), rgba(12, 13, 19, 0.8));
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    padding: 2.5rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.auth-card h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(74, 108, 247, 0.5);
+}
+
+.auth-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Form styles */
+.auth-form {
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input-with-icon .toggle-password {
+    left: auto;
+    right: 15px;
+    cursor: pointer;
+}
+
+.input-with-icon input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.input-with-icon input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.input-with-icon input:focus {
+    outline: none;
+    border-color: #4a6cf7;
+    box-shadow: 0 0 0 2px rgba(74, 108, 247, 0.3);
+}
+
+/* Form options */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #4a6cf7;
+}
+
+.remember-me label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.forgot-password {
+    color: #4a6cf7;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.forgot-password:hover {
+    color: #3a5bd9;
+    text-decoration: underline;
+}
+
+/* Buttons */
+.auth-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a6cf7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(74, 108, 247, 0.3);
+}
+
+.auth-button:hover {
+    background-color: #3a5bd9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(74, 108, 247, 0.4);
+}
+
+.auth-button:active {
+    transform: translateY(0);
+}
+
+.secondary-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+}
+
+.secondary-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Divider */
+.auth-divider {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.auth-divider span {
+    padding: 0 15px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+
+/* Social auth buttons */
+.social-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.social-button.google {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-button.facebook {
+    background-color: rgba(59, 89, 152, 0.2);
+    color: white;
+    border: 1px solid rgba(59, 89, 152, 0.3);
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Auth redirect */
+.auth-redirect {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.auth-redirect a {
+    color: #4a6cf7;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.auth-redirect a:hover {
+    text-decoration: underline;
+    color: #3a5bd9;
+}
+
+/* Password strength meter */
+.password-strength {
+    margin-top: 0.5rem;
+}
+
+.strength-meter {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.strength-segment {
+    height: 4px;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+
+.strength-segment.active:nth-child(1) {
+    background-color: #ff4d4d;
+}
+
+.strength-segment.active:nth-child(2) {
+    background-color: #ffa64d;
+}
+
+.strength-segment.active:nth-child(3) {
+    background-color: #ffff4d;
+}
+
+.strength-segment.active:nth-child(4) {
+    background-color: #4dff4d;
+}
+
+.strength-text {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.strength-text.weak {
+    color: #ff4d4d;
+}
+
+.strength-text.fair {
+    color: #ffa64d;
+}
+
+.strength-text.good {
+    color: #ffff4d;
+}
+
+.strength-text.strong {
+    color: #4dff4d;
+}
+
+/* Success message */
+.success-icon {
+    text-align: center;
+    font-size: 4rem;
+    color: #4dff4d;
+    margin-bottom: 1rem;
+}
+
+#success-message h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#success-message p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.small-text {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+    .auth-card {
+        padding: 1.5rem;
+    }
+    
+    .auth-card h2 {
+        font-size: 1.8rem;
+    }
+    
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .forgot-password {
+        align-self: flex-end;
+    }
+} 

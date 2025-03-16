@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Insta⚡️ Like</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar-fix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Add Lora font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Stars background -->
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="home.html" style="text-decoration: none;">
+            <div class="logo">
+                <span>Get Insta<span class="lightning">⚡️</span> Like</span>
+            </div>
+        </a>
+        <div class="nav-buttons">
+            <div class="user-info">
+                <span class="username" id="user-dropdown-toggle">
+                    Welcome, <span id="user-name">User</span> <i class="fas fa-chevron-down"></i>
+                </span>
+                <a href="home.html" class="logout-btn" id="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="stat-details">
+                    <h3>Total Earned Likes</h3>
+                    <p class="stat-value">1,234</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <div class="stat-details">
+                    <h3>Total Invites</h3>
+                    <p class="stat-value">56</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="action-card">
+            <h3>Get Likes on Your Post</h3>
+            <div class="input-group">
+                <input type="text" placeholder="Paste Instagram post URL here" id="post-url">
+                <input type="number" placeholder="Enter number of likes (Max: 1,234)" id="likes-count" min="1" max="1234" oninput="this.value = Math.min(this.value, 1234)" style="width: 100%;">
+                <p class="error-text" id="likes-error" style="display:none; color:red; font-size:12px;">You can only request up to your earned likes (1,234)</p>
+                <button class="primary-btn" id="get-likes-btn">Get Likes</button>
+            </div>
+        </div>
+        <div class="action-card">
+            <h3>Invite Friends</h3>
+            <p>Share your invite link to earn more likes</p>
+            <div class="invite-link-container">
+                <input type="text" value="https://insta-likes.com/invite/user123" id="invite-link" readonly>
+                <button class="copy-btn" id="copy-btn">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="recent-activity">
+            <h3>Recent Activity</h3>
+            <div class="activity-list" id="activity-list">
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="activity-details">
+                        <p>You received 25 likes on your post</p>
+                        <span class="activity-time">2 hours ago</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="activity-details">
+                        <p><strong>John Smith</strong> joined with your invite link</p>
+                        <span class="activity-time">Yesterday</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="activity-details">
+                        <p>Your like request for post <strong>instagram.com/p/abc123</strong> is processing</p>
+                        <span class="activity-time">3 days ago</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="activity-details">
+                        <p><strong>Emma Johnson</strong> joined with your invite link</p>
+                        <span class="activity-time">5 days ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html> 
